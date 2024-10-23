@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { navLinks } from "../data";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,7 @@ const Navbar: React.FC = () => {
       <div className="md:px-0">
         <div className="flex justify-between items-center h-16">
           {/* Left: Logo */}
-          <div className="flex h-16 w-auto items-center justify-center bg-[#0096ff] cursor-pointer">
+          <div className="flex h-16 w-auto items-center justify-center bg-primary hover:bg-secondary transition duration-150 cursor-pointer">
             <img
               src="/icons/icon.png"
               alt="Logo"
@@ -20,44 +22,15 @@ const Navbar: React.FC = () => {
             />
           </div>
 
-          {/* Center: Nav Links */}
           <div className="hidden md:flex md:space-x-8">
-            <a
-              href="#"
-              className="text-gray-800 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-            >
-              Products
-            </a>
-            <a
-              href="#"
-              className="text-gray-800 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-            >
-              Support
-            </a>
-            <a
-              href="#"
-              className="text-gray-800 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-            >
-              Solutions
-            </a>
-            <a
-              href="#"
-              className="text-gray-800 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-            >
-              Developers
-            </a>
-            <a
-              href="#"
-              className="text-gray-800 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-            >
-              Partners
-            </a>
-            <a
-              href="#"
-              className="text-gray-800 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-            >
-              Foundry
-            </a>
+            {navLinks?.map((item) => (
+              <Link
+                to="#"
+                className="text-secondary hover:text-primary px-3 py-2 text-base capitalize"
+              >
+                {item.title}
+              </Link>
+            ))}
           </div>
 
           {/* Right: Icons */}
