@@ -1,6 +1,6 @@
 const Explore = () => {
   return (
-    <section className="mt-0 font-primary">
+    <section className="mt-0 font-primary bg-[url('/images/bg1.png')] bg-cover bg-center">
       <div className="flex flex-row-reverse justify-between">
         <div className="w-1/2 bg-gray-200/50">
           <img src="/images/5.jpg" alt="" className="" />
@@ -17,7 +17,7 @@ const Explore = () => {
             heightened personalization and productivity, where every task is now
             smarter.
           </p>
-          <button className="bg-none w-1/4 border border-primary py-3 hover:border-secondary transition duration-150 capitalize">
+          <button className="bg-none w-1/4 border bg-secondary py-3 hover:border-secondary transition duration-150 capitalize rounded text-white">
             Explore more
           </button>
         </div>

@@ -1,6 +1,6 @@
 const Highlights = () => {
   return (
-    <section className="mt-12 font-primary">
+    <section className="mt-12 font-primary bg-[url('/images/bg1.png')] bg-cover bg-center">
       <div className="flex justify-between">
         <div className="w-1/2 bg-gray-200/50">
           <img src="/images/p1.jpg" alt="" className="" />
