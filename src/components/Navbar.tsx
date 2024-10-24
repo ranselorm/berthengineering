@@ -14,12 +14,8 @@ const Navbar: React.FC = () => {
       <div className="md:px-0">
         <div className="flex justify-between items-center h-16">
           {/* Left: Logo */}
-          <div className="flex h-16 w-auto items-center justify-center bg-primary hover:bg-secondary transition duration-150 cursor-pointer">
-            <img
-              src="/icons/icon.png"
-              alt="Logo"
-              className="h-12 w-16 object-contain"
-            />
+          <div className="w-36">
+            <img src="/icons/main.png" alt="Logo" className="w-full" />
           </div>
 
           <div className="hidden md:flex md:space-x-8">

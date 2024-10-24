@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Highlights = () => {
   return (
     <section className="mt-12 font-primary bg-[url('/images/bg1.png')] bg-cover bg-center">
@@ -17,9 +19,7 @@ const Highlights = () => {
             heightened personalization and productivity, where every task is now
             smarter.
           </p>
-          <button className="bg-none w-1/4 border border-primary py-3 hover:border-secondary transition duration-150 capitalize">
-            Explore more
-          </button>
+          <Button text="Explore more" />
         </div>
       </div>
     </section>

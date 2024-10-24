@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Highlights from "./components/Highlights";
 import Explore from "./components/Explore";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Highlights />
       <Explore />
       <Features />
+      <Footer />
     </>
   );
 }
