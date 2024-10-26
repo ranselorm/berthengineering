@@ -1,16 +1,21 @@
 import Button from "./Button";
+
 const Explore = () => {
   return (
-    <section className="mt-0 font-primary bg-[url('/images/bg1.png')] bg-cover bg-center">
-      <div className="flex flex-row-reverse justify-between">
-        <div className="w-1/2 bg-gray-200/50">
-          <img src="/images/5.jpg" alt="" className="" />
+    <section className="mt-24 font-primary px-12">
+      <div className="flex flex-row-reverse justify-between items-center">
+        <div className="pl-16 w-[955px]">
+          <img
+            src="/images/man.png"
+            alt=""
+            className="-mt-16 h-[600px] rounded"
+          />
         </div>
         <div className="w-1/2 flex justify-center flex-col px-10 py-6 gap-y-6">
-          <span className="text-sm text-primary">
+          <span className="text-base text-primary">
             Intel® Core™ Ultra processors
           </span>
-          <h2 className="text-3xl">Elevate how you work, create, and play</h2>
+          <h2 className="text-4xl">Elevate how you work, create, and play</h2>
           <p className="">
             Experience the potential of intelligent AI assistants, effortless
             text and image creation, enhanced collaboration effects, and more–

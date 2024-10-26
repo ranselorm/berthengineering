@@ -5,7 +5,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text }) => {
   return (
-    <button className="bg-none w-1/4 border bg-secondary py-3 transition duration-150 capitalize rounded text-white">
+    <button className="w-5/12 border border-secondary bg-transparent text-black py-3 transition duration-50 capitalize rounded hover:bg-secondary hover:text-white">
       {text}
     </button>
   );
