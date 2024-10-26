@@ -2,26 +2,24 @@ import Button from "./Button";
 
 const Explore = () => {
   return (
-    <section className="mt-24 font-primary px-12">
-      <div className="flex flex-row-reverse justify-between items-center">
-        <div className="pl-16 w-[955px]">
+    <section className="mt-32 font-primary px-8">
+      <div className="flex flex-row-reverse justify-center items-center">
+        <div className="">
           <img
             src="/images/man.png"
-            alt=""
+            alt="man"
             className="-mt-16 h-[600px] rounded"
           />
         </div>
-        <div className="w-1/2 flex justify-center flex-col px-10 py-6 gap-y-6">
+        <div className="w-5/12 flex justify-center flex-col px-10 py-6 gap-y-6">
           <span className="text-base text-primary">
             Intel® Core™ Ultra processors
           </span>
-          <h2 className="text-4xl">Elevate how you work, create, and play</h2>
+          <h2 className="text-4xl">Unlock AI Value in Your Enterprise</h2>
           <p className="">
-            Experience the potential of intelligent AI assistants, effortless
-            text and image creation, enhanced collaboration effects, and more–
-            right at your fingertips. Redefine your PC experience with
-            heightened personalization and productivity, where every task is now
-            smarter.
+            The new Intel® Xeon® processors and Intel® Gaudi® 3 AI accelerators
+            are built to efficiently and cost-effectively handle a broad
+            spectrum of workloads, including high-demand AI applications.
           </p>
           <Button text="Explore more" />
         </div>
